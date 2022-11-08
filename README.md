@@ -13,5 +13,14 @@ Image(
     'https://jovial.com/images/jupiter.svg',
   ),
 )
+
+// Or
+
+ScalableImageWidget.fromSISource(
+  fit: BoxFit.contain,
+  si: CachedNetworkSvgSource(
+    'https://jovial.com/images/jupiter.svg',
+  ),
+)
 ```
 

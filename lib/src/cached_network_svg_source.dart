@@ -50,18 +50,20 @@ class CachedNetworkSvgSource extends ScalableImageSource {
   }
 
   @override
-  bool operator ==(Object other) =>
-      identical(this, other) &&
-      other is CachedNetworkSvgSource &&
-      runtimeType == other.runtimeType &&
-      url == other.url &&
-      currentColor == other.currentColor &&
-      compact == other.compact &&
-      bigFloats == other.bigFloats &&
-      warnF == other.warnF &&
-      headers == other.headers &&
-      cacheManager == other.cacheManager &&
-      cacheKey == other.cacheKey;
+  bool operator ==(Object other) {
+    if (other is CachedNetworkSvgSource) {
+      return url == other.url &&
+          currentColor == other.currentColor &&
+          compact == other.compact &&
+          bigFloats == other.bigFloats &&
+          warnF == other.warnF &&
+          headers == other.headers &&
+          cacheManager == other.cacheManager &&
+          cacheKey == other.cacheKey;
+    } else {
+      return false;
+    }
+  }
 
   @override
   int get hashCode =>
