@@ -1,5 +1,7 @@
 part of flutter_svg_image;
 
+/// SVG [ImageProvider].
+/// Use jovial_svg to convert SVG to image.
 class SvgImage extends ImageProvider<SvgImageKey> {
   ///
   /// A default cache.  By default, this cache holds zero unreferenced

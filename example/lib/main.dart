@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg_image/flutter_svg_image.dart';
 
-void main() {
+void main() async {
   runApp(const MyApp());
 }
 
@@ -13,9 +13,16 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  bool _webViewCreated = false;
+
   @override
   void initState() {
     super.initState();
+    SvgWebImage.initWebView().then((value) {
+      setState(() {
+        _webViewCreated = true;
+      });
+    });
   }
 
   @override
@@ -25,22 +32,25 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text('Plugin example app'),
         ),
-        body: Builder(
-          builder: (context) {
-            final size = MediaQuery.of(context).size;
-            return SizedBox(
-              width: double.infinity,
-              height: double.infinity,
-              child: Image(
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              Image(
                 fit: BoxFit.contain,
                 image: SvgImage.cachedNetwork(
                   'https://jovial.com/images/jupiter.svg',
-                  height: size.height >= size.width ? size.height : null,
-                  width: size.width > size.height ? size.width : null,
                 ),
               ),
-            );
-          },
+              if (_webViewCreated)
+                Image(
+                  fit: BoxFit.contain,
+                  image: SvgWebImage.cachedNetwork(
+                    'https://jovial.com/images/jupiter.svg',
+                    cacheSvg: true,
+                  ),
+                ),
+            ],
+          ),
         ),
       ),
     );

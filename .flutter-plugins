@@ -1,8 +1,10 @@
 # This is a generated file; do not edit or check into version control.
-path_provider=D:\\DevelopeTool\\flutter\\.pub-cache\\hosted\\pub.flutter-io.cn\\path_provider-2.0.11\\
-path_provider_android=D:\\DevelopeTool\\flutter\\.pub-cache\\hosted\\pub.flutter-io.cn\\path_provider_android-2.0.21\\
-path_provider_ios=D:\\DevelopeTool\\flutter\\.pub-cache\\hosted\\pub.flutter-io.cn\\path_provider_ios-2.0.11\\
-path_provider_linux=D:\\DevelopeTool\\flutter\\.pub-cache\\hosted\\pub.flutter-io.cn\\path_provider_linux-2.1.7\\
-path_provider_macos=D:\\DevelopeTool\\flutter\\.pub-cache\\hosted\\pub.flutter-io.cn\\path_provider_macos-2.0.6\\
-path_provider_windows=D:\\DevelopeTool\\flutter\\.pub-cache\\hosted\\pub.flutter-io.cn\\path_provider_windows-2.1.3\\
-sqflite=D:\\DevelopeTool\\flutter\\.pub-cache\\hosted\\pub.flutter-io.cn\\sqflite-2.2.0+3\\
+flutter_image_compress=C:\\Users\\53130\\AppData\\Local\\Pub\\Cache\\hosted\\pub.flutter-io.cn\\flutter_image_compress-1.1.3\\
+flutter_inappwebview=C:\\Users\\53130\\AppData\\Local\\Pub\\Cache\\hosted\\pub.flutter-io.cn\\flutter_inappwebview-6.0.0-beta.22\\
+path_provider=C:\\Users\\53130\\AppData\\Local\\Pub\\Cache\\hosted\\pub.flutter-io.cn\\path_provider-2.0.11\\
+path_provider_android=C:\\Users\\53130\\AppData\\Local\\Pub\\Cache\\hosted\\pub.flutter-io.cn\\path_provider_android-2.0.21\\
+path_provider_ios=C:\\Users\\53130\\AppData\\Local\\Pub\\Cache\\hosted\\pub.flutter-io.cn\\path_provider_ios-2.0.11\\
+path_provider_linux=C:\\Users\\53130\\AppData\\Local\\Pub\\Cache\\hosted\\pub.flutter-io.cn\\path_provider_linux-2.1.7\\
+path_provider_macos=C:\\Users\\53130\\AppData\\Local\\Pub\\Cache\\hosted\\pub.flutter-io.cn\\path_provider_macos-2.0.6\\
+path_provider_windows=C:\\Users\\53130\\AppData\\Local\\Pub\\Cache\\hosted\\pub.flutter-io.cn\\path_provider_windows-2.1.3\\
+sqflite=C:\\Users\\53130\\AppData\\Local\\Pub\\Cache\\hosted\\pub.flutter-io.cn\\sqflite-2.2.0+3\\
