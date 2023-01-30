@@ -12,7 +12,7 @@ Image(
   image: SvgImage.cachedNetwork(
     'https://jovial.com/images/jupiter.svg',
   ),
-)
+);
 
 // Or
 
@@ -21,6 +21,16 @@ ScalableImageWidget.fromSISource(
   si: CachedNetworkSvgSource(
     'https://jovial.com/images/jupiter.svg',
   ),
-)
+);
+
+// WebView
+SvgWebImage.initWebView();
+Image(
+  fit: BoxFit.contain,
+  image: SvgWebImage.cachedNetwork(
+    'https://jovial.com/images/jupiter.svg',
+    cacheSvg: true,
+  ),
+);
 ```
 
