@@ -611,8 +611,8 @@ class FileSvgFetcher extends SvgFetcher {
   }
 
   @override
-  Future<String> getSvgString() async {
-    return await file.readAsStringSync();
+  Future<String> getSvgString() {
+    return file.readAsString();
   }
 
   @override
@@ -724,7 +724,7 @@ class AssetSvgFetcher extends SvgFetcher {
   @override
   Future<String> getKey() async {
     final svgString = await getSvgString();
-    return '${name}${svgString.hashCode}${svgString.length}?$width-$height-$minWidth-$backgroundColor';
+    return '$name${svgString.hashCode}${svgString.length}?$width-$height-$minWidth-$backgroundColor';
   }
 
   @override
